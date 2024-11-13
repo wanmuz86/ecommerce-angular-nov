@@ -7,8 +7,11 @@
         <div class="col-3" *ngFor="let product of products">
             <h4>{{product.name}}</h4>
             <p>{{product.price | currency:'USD'}}</p>
+            <!-- If your url has a parameter that you will get dynamicallay from a variable
+                products/1, products/2
+            You will use property binding [routerLink] -->
+            <a [routerLink]="['products',product.id]" class="btn btn-primary">See More</a>
         </div>
     </div>
-
 </section>
 </div>

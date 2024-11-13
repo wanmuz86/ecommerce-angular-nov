@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div class="container">
+<section>
+    <div *ngIf="product">
+        <!-- !! means product will have a value and never be undefined -->
+    <h2>{{product!!.name}}</h2>
+    <p>{{product!!.price}}</p>
+</div>
+</section>    
+</div>
