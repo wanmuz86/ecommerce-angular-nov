@@ -5,7 +5,8 @@
     <div class="row">
         <!-- 1 row in Bootstrap has 12 grid - 1 row 4 columns, 12 / 4 -->
         <div class="col-3" *ngFor="let product of products">
-            <h4>{{product.name}}</h4>
+            <h4>{{product.title}}</h4>
+            <img [src]="product.image" alt="" class="img-fluid">
             <p>{{product.price | currency:'USD'}}</p>
             <!-- If your url has a parameter that you will get dynamicallay from a variable
                 products/1, products/2
