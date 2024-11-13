@@ -1,1 +1,14 @@
-<p>product-list works!</p>
+<div class="container">
+    <!-- Padding top and botoom py  , padding left right px -->
+<section class="py-3">
+    <h2>Current product</h2>
+    <div class="row">
+        <!-- 1 row in Bootstrap has 12 grid - 1 row 4 columns, 12 / 4 -->
+        <div class="col-3" *ngFor="let product of products">
+            <h4>{{product.name}}</h4>
+            <p>{{product.price | currency:'USD'}}</p>
+        </div>
+    </div>
+
+</section>
+</div>

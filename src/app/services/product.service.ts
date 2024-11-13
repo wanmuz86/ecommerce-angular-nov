@@ -42,7 +42,6 @@ getProductById(id:number){
   return this.products.find((val)=> val.id === id);
 }
 
-
 // Update
 
 
